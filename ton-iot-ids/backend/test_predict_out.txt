@@ -1,0 +1,47 @@
+=== Test 1: Normal ===
+{
+  "prediction": "Attack",
+  "threat_type": "ddos",
+  "threat_icon": "\ud83d\udca5",
+  "threat_description": "Distributed Denial-of-Service attack.",
+  "severity": "High",
+  "probability": 0.2514,
+  "risk_level": "Low",
+  "class_probabilities": {
+    "backdoor": 0.0027,
+    "ddos": 0.2514,
+    "dos": 0.2484,
+    "injection": 0.1728,
+    "mitm": 0.2108,
+    "normal": 0.0932,
+    "password": 0.0107,
+    "ransomware": 0.0,
+    "scanning": 0.0,
+    "xss": 0.01
+  },
+  "model_used": "RandomForest-MultiClass"
+}
+
+=== Test 2: Attack ===
+{
+  "prediction": "Attack",
+  "threat_type": "mitm",
+  "threat_icon": "\ud83d\udd75\ufe0f",
+  "threat_description": "Man-in-the-Middle attack.",
+  "severity": "Critical",
+  "probability": 0.4186,
+  "risk_level": "High",
+  "class_probabilities": {
+    "backdoor": 0.0,
+    "ddos": 0.1045,
+    "dos": 0.0933,
+    "injection": 0.0,
+    "mitm": 0.4186,
+    "normal": 0.3711,
+    "password": 0.0,
+    "ransomware": 0.0035,
+    "scanning": 0.0008,
+    "xss": 0.0082
+  },
+  "model_used": "RandomForest-MultiClass"
+}

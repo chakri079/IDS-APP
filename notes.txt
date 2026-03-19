@@ -1,0 +1,5 @@
+npm run dev 
+
+cd backend
+python train_dummy_rf.py  # Create the model first
+uvicorn app:app --reload --host 0.0.0.0 --port 8000

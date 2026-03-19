@@ -1,0 +1,12 @@
+tensorflow==2.15.0
+pandas
+numpy
+scikit-learn
+imbalanced-learn
+fastapi
+uvicorn
+pydantic
+python-multipart
+joblib
+python-dotenv
+google-generativeai
