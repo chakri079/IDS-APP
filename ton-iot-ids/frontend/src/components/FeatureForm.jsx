@@ -35,7 +35,8 @@ const FeatureForm = ({ setRefreshedResult }) => {
 
         try {
             console.log('📤 Sending to backend:', formData);
-            const response = await axios.post('http://localhost:8000/predict', {
+            const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000';
+            const response = await axios.post(`${API_URL}/predict`, {
                 features: formData
             });
             console.log('📥 Received from backend:', response.data);
